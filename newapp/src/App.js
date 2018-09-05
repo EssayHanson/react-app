@@ -36,8 +36,9 @@ class App extends Component {
         <p className="App-intro">
           {/* To get started, edit <code>src/App.js</code> and save to reload. */}
         </p>
+        <Name name={this.state.showComponent ? 'Name on' : 'Name off'}/>
         
-        <Name name={this.state.showComponent ? 'Steven' : 'Tom'}/>
+        {/* <Name name={this.state.showComponent ? 'Steven' : 'Tom'}/> */}
         <button onClick={this.handleClick}>CLICK ME</button>
     </div>
     );
