@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Name from './components/Names';
+import Input from './components/Input';
 
 class App extends Component {
   constructor(props, context) {
@@ -11,9 +12,7 @@ class App extends Component {
     this.state = {
       showComponent: true
     }
-
-    this.name = 
-
+    
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -37,9 +36,9 @@ class App extends Component {
           {/* To get started, edit <code>src/App.js</code> and save to reload. */}
         </p>
         <Name name={this.state.showComponent ? 'Name on' : 'Name off'}/>
-        
-        {/* <Name name={this.state.showComponent ? 'Steven' : 'Tom'}/> */}
         <button onClick={this.handleClick}>CLICK ME</button>
+      
+        <Input />
     </div>
     );
   }
