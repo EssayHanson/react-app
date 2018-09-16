@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Name from './components/Names';
+import Feed from './components/Feed';
 
 class App extends Component {
   constructor(props, context) {
@@ -25,7 +26,7 @@ class App extends Component {
       }
   ))
   }
-  
+
   render() {
     return (
       <div className="App">
@@ -40,6 +41,7 @@ class App extends Component {
         
         {/* <Name name={this.state.showComponent ? 'Steven' : 'Tom'}/> */}
         <button onClick={this.handleClick}>CLICK ME</button>
+        <Feed/>
     </div>
     );
   }
